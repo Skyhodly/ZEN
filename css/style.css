@@ -1393,7 +1393,7 @@ body._lock {
 }
 
 .footer-columns._init .footer-columns__label-spoiler {
-  padding: 0.625rem 2.5rem 0.625rem 0;
+  padding: 0.3125rem 2.5rem 0.3125rem 0;
 }
 
 .footer-columns._init .footer-columns__label-spoiler::before,
@@ -1425,13 +1425,18 @@ body._lock {
   margin-bottom: 0.9375rem;
 }
 .menu-footer__link {
-  display: block;
+  display: inline-block;
   padding: 0.3125rem 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .menu-footer__link:hover {
   color: #0048ce;
+}
+@media (max-width: 47.9988em) {
+  .menu-footer__link {
+    display: block;
+  }
 }
 
 .footer-info__label:not(:last-child) {

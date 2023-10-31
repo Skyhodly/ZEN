@@ -1056,7 +1056,7 @@ body {
     cursor: pointer;
 }
 .footer-columns._init .footer-columns__label-spoiler {
-    padding: 0.625rem 2.5rem 0.625rem 0;
+    padding: 0.3125rem 2.5rem 0.3125rem 0;
 }
 .footer-columns._init .footer-columns__label-spoiler::before,
 .footer-columns._init .footer-columns__label-spoiler::after {
@@ -1085,11 +1085,14 @@ body {
     }
 
     &__link {
-        display: block;
+        display: inline-block;
         padding: 0.3125rem 0;
         transition: all 0.3s ease 0s;
         &:hover {
             color: #0048ce;
+        }
+        @media (max-width: 47.9988em) {
+            display: block;
         }
     }
 }
